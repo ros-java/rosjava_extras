@@ -147,42 +147,42 @@ public class imageEncodings {
                 lEncoding.equals(BAYER_GRBG16))
             return 1;
 
-        if (lEncoding.equals(TYPE_8UC1) || 
-			lEncoding.equals(TYPE_8SC1) || 
-			lEncoding.equals(TYPE_16UC1) || 
-			lEncoding.equals(TYPE_16SC1) || 
-			lEncoding.equals(TYPE_32SC1) || 
-			lEncoding.equals(TYPE_32FC1) ||
-            lEncoding.equals(TYPE_64FC1))
+        if (lEncoding.equals(TYPE_8UC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_8SC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_16UC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_16SC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_32SC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_32FC1.toLowerCase()) ||
+            lEncoding.equals(TYPE_64FC1.toLowerCase()))
         return 1;
 
-        if (lEncoding.equals(TYPE_8UC2) ||
-			lEncoding.equals(TYPE_8SC2) || 
-			lEncoding.equals(TYPE_16UC2) || 
-			lEncoding.equals(TYPE_16SC2) || 
-			lEncoding.equals(TYPE_32SC2) || 
-			lEncoding.equals(TYPE_32FC2) ||
-            lEncoding.equals(TYPE_64FC2))
+        if (lEncoding.equals(TYPE_8UC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_8SC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_16UC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_16SC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_32SC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_32FC2.toLowerCase()) ||
+            lEncoding.equals(TYPE_64FC2.toLowerCase()))
         return 2;
 
-        if (lEncoding.equals(TYPE_8UC3) ||
-			lEncoding.equals(TYPE_8SC3) ||
-			lEncoding.equals(TYPE_16UC3) ||
-			lEncoding.equals(TYPE_16SC3) ||
-			lEncoding.equals(TYPE_32SC3) ||
-			lEncoding.equals(TYPE_32FC3) ||
-			lEncoding.equals(TYPE_64FC3))
+        if (lEncoding.equals(TYPE_8UC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_8SC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_16UC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_16SC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_32SC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_32FC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_64FC3.toLowerCase()))
 			return 3;
 
-        if (lEncoding.equals(TYPE_8UC4) ||
-			lEncoding.equals(TYPE_8SC4) || 
-			lEncoding.equals(TYPE_16UC4) || 
-			lEncoding.equals(TYPE_16SC4) || 
-			lEncoding.equals(TYPE_32SC4) || 
-			lEncoding.equals(TYPE_32FC4) || 
-			lEncoding.equals(TYPE_64FC4))
+        if (lEncoding.equals(TYPE_8UC4.toLowerCase()) ||
+			lEncoding.equals(TYPE_8SC4.toLowerCase()) ||
+			lEncoding.equals(TYPE_16UC4.toLowerCase()) ||
+			lEncoding.equals(TYPE_16SC4.toLowerCase()) ||
+			lEncoding.equals(TYPE_32SC4.toLowerCase()) ||
+			lEncoding.equals(TYPE_32FC4.toLowerCase()) ||
+			lEncoding.equals(TYPE_64FC4.toLowerCase()))
 			return 4;
-        
+
         if (lEncoding.equals(YUV422))
             return 2;
 
@@ -215,46 +215,46 @@ public class imageEncodings {
                 lEncoding.equals(BAYER_GRBG16))
             return 16;
 
-        if (lEncoding.equals(TYPE_8UC1) || 
-			lEncoding.equals(TYPE_8UC2) || 
-			lEncoding.equals(TYPE_8UC3) || 
-			lEncoding.equals(TYPE_8UC4))
+        if (lEncoding.equals(TYPE_8UC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_8UC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_8UC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_8UC4.toLowerCase()))
 			 return 8;
 
-        if (lEncoding.equals(TYPE_8SC1) || 
-			lEncoding.equals(TYPE_8SC2) || 
-			lEncoding.equals(TYPE_8SC3) || 
-			lEncoding.equals(TYPE_8SC4))
+        if (lEncoding.equals(TYPE_8SC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_8SC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_8SC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_8SC4.toLowerCase()))
 			 return 8;
 
-        if (lEncoding.equals(TYPE_16UC1) || 
-			lEncoding.equals(TYPE_16UC2) || 
-			lEncoding.equals(TYPE_16UC3) || 
-			lEncoding.equals(TYPE_16UC4))
+        if (lEncoding.equals(TYPE_16UC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_16UC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_16UC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_16UC4.toLowerCase()))
 			 return 16;
 
-        if (lEncoding.equals(TYPE_16SC1) || 
-			lEncoding.equals(TYPE_16SC2) || 
-			lEncoding.equals(TYPE_16SC3) || 
-			lEncoding.equals(TYPE_16SC4))
+        if (lEncoding.equals(TYPE_16SC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_16SC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_16SC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_16SC4.toLowerCase()))
 			 return 16;
 
-        if (lEncoding.equals(TYPE_32SC1) ||
-			lEncoding.equals(TYPE_32SC2) || 
-			lEncoding.equals(TYPE_32SC3) || 
-			lEncoding.equals(TYPE_32SC4))
+        if (lEncoding.equals(TYPE_32SC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_32SC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_32SC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_32SC4.toLowerCase()))
 			 return 32;
 
-        if (lEncoding.equals(TYPE_32FC1) || 
-			lEncoding.equals(TYPE_32FC2) || 
-			lEncoding.equals(TYPE_32FC3) || 
-			lEncoding.equals(TYPE_32FC4))
+        if (lEncoding.equals(TYPE_32FC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_32FC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_32FC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_32FC4.toLowerCase()))
 			 return 32;
 
-        if (lEncoding.equals(TYPE_64FC1) || 
-			lEncoding.equals(TYPE_64FC2) || 
-			lEncoding.equals(TYPE_64FC3) || 
-			lEncoding.equals(TYPE_64FC4))
+        if (lEncoding.equals(TYPE_64FC1.toLowerCase()) ||
+			lEncoding.equals(TYPE_64FC2.toLowerCase()) ||
+			lEncoding.equals(TYPE_64FC3.toLowerCase()) ||
+			lEncoding.equals(TYPE_64FC4.toLowerCase()))
             return 64;
         
         if (lEncoding.equals(YUV422))
