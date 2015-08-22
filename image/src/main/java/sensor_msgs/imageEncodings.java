@@ -126,17 +126,17 @@ public class imageEncodings {
         // First do the common-case encodings
         if (lEncoding.equals(MONO8) ||
                 lEncoding.equals(MONO16))
-            return 1;
+			return 1;
         if (lEncoding.equals(BGR8) ||
                 lEncoding.equals(RGB8) ||
                 lEncoding.equals(BGR16) ||
                 lEncoding.equals(RGB16))
-            return 3;
+			return 3;
         if (lEncoding.equals(BGRA8) ||
                 lEncoding.equals(RGBA8) ||
                 lEncoding.equals(BGRA16) ||
                 lEncoding.equals(RGBA16))
-            return 4;
+			return 4;
         if (lEncoding.equals(BAYER_RGGB8) ||
                 lEncoding.equals(BAYER_BGGR8) ||
                 lEncoding.equals(BAYER_GBRG8) ||
@@ -145,7 +145,7 @@ public class imageEncodings {
                 lEncoding.equals(BAYER_BGGR16) ||
                 lEncoding.equals(BAYER_GBRG16) ||
                 lEncoding.equals(BAYER_GRBG16))
-            return 1;
+			return 1;
 
         if (lEncoding.equals(TYPE_8UC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_8SC1.toLowerCase()) ||
@@ -154,7 +154,7 @@ public class imageEncodings {
                 lEncoding.equals(TYPE_32SC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_32FC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_64FC1.toLowerCase()))
-            return 1;
+			return 1;
 
         if (lEncoding.equals(TYPE_8UC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_8SC2.toLowerCase()) ||
@@ -163,7 +163,7 @@ public class imageEncodings {
                 lEncoding.equals(TYPE_32SC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_32FC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_64FC2.toLowerCase()))
-            return 2;
+			return 2;
 
         if (lEncoding.equals(TYPE_8UC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_8SC3.toLowerCase()) ||
@@ -172,7 +172,7 @@ public class imageEncodings {
                 lEncoding.equals(TYPE_32SC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_32FC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_64FC3.toLowerCase()))
-            return 3;
+			return 3;
 
         if (lEncoding.equals(TYPE_8UC4.toLowerCase()) ||
                 lEncoding.equals(TYPE_8SC4.toLowerCase()) ||
@@ -181,10 +181,10 @@ public class imageEncodings {
                 lEncoding.equals(TYPE_32SC4.toLowerCase()) ||
                 lEncoding.equals(TYPE_32FC4.toLowerCase()) ||
                 lEncoding.equals(TYPE_64FC4.toLowerCase()))
-            return 4;
+			return 4;
 
         if (lEncoding.equals(YUV422))
-            return 2;
+			return 2;
 
         throw new Exception("Unknown encoding " + encoding);
     }
@@ -192,7 +192,7 @@ public class imageEncodings {
     public static int bitDepth(final String encoding ) throws Exception {
         String lEncoding = encoding.toLowerCase();
         if (lEncoding.equals(MONO16))
-            return 16;
+			return 16;
         if (lEncoding.equals(MONO8) ||
                 lEncoding.equals(BGR8) ||
                 lEncoding.equals(RGB8) ||
@@ -202,7 +202,7 @@ public class imageEncodings {
                 lEncoding.equals(BAYER_BGGR8) ||
                 lEncoding.equals(BAYER_GBRG8) ||
                 lEncoding.equals(BAYER_GRBG8))
-            return 8;
+			return 8;
 
         if (lEncoding.equals(MONO16) ||
                 lEncoding.equals(BGR16) ||
@@ -213,53 +213,53 @@ public class imageEncodings {
                 lEncoding.equals(BAYER_BGGR16) ||
                 lEncoding.equals(BAYER_GBRG16) ||
                 lEncoding.equals(BAYER_GRBG16))
-            return 16;
+			return 16;
 
         if (lEncoding.equals(TYPE_8UC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_8UC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_8UC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_8UC4.toLowerCase()))
-			 return 8;
+			return 8;
 
         if (lEncoding.equals(TYPE_8SC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_8SC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_8SC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_8SC4.toLowerCase()))
-			 return 8;
+			return 8;
 
         if (lEncoding.equals(TYPE_16UC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_16UC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_16UC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_16UC4.toLowerCase()))
-			 return 16;
+			return 16;
 
         if (lEncoding.equals(TYPE_16SC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_16SC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_16SC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_16SC4.toLowerCase()))
-			 return 16;
+			return 16;
 
         if (lEncoding.equals(TYPE_32SC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_32SC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_32SC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_32SC4.toLowerCase()))
-			 return 32;
+			return 32;
 
         if (lEncoding.equals(TYPE_32FC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_32FC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_32FC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_32FC4.toLowerCase()))
-			 return 32;
+			return 32;
 
         if (lEncoding.equals(TYPE_64FC1.toLowerCase()) ||
                 lEncoding.equals(TYPE_64FC2.toLowerCase()) ||
                 lEncoding.equals(TYPE_64FC3.toLowerCase()) ||
                 lEncoding.equals(TYPE_64FC4.toLowerCase()))
-            return 64;
-        
+			return 64;
+
         if (lEncoding.equals(YUV422))
-            return 8;
-        
+			return 8;
+
         throw new Exception("Unknown encoding " + encoding);
     }
 }
