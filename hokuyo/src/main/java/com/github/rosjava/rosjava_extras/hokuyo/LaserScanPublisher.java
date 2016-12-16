@@ -105,11 +105,16 @@ public class LaserScanPublisher extends AbstractNodeMain {
         "Number of scans in configuration does not match received range measurements (%d > %d).",
         numberOfConfiguredRanges, scan.getRanges().length));
     float[] ranges = new float[numberOfConfiguredRanges];
+    int scannedRanges = scan.getRanges().length;
     for (int i = 0; i < numberOfConfiguredRanges; i++) {
       int step = i + configuration.getFirstStep();
       // Select only the configured range measurements and convert from
       // millimeters to meters.
-      ranges[i] = (float) (scan.getRanges()[step] / 1000.0);
+      if(step>=scannedRanges) {
+        ranges[i] = 0;
+      } else {
+        ranges[i] = (float) (scan.getRanges()[step] / 1000.0);
+      }
     }
     result.setRanges(ranges);
     result.setTimeIncrement(configuration.getTimeIncrement());

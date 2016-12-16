@@ -117,6 +117,8 @@ public class Device implements LaserScannerDevice {
     boolean ready = false;
     while (!ready) {
       ready = true;
+      // NOTE: At this moment, the sent command does not matter much.
+      // Currently fixed to (0; 768)
       write("MD0000076800001");
       try {
         checkMdmsStatus();
@@ -260,8 +262,9 @@ public class Device implements LaserScannerDevice {
       @Override
       public void run() {
         while (true) {
-          String command = "MD00000768000%02d";
-          write(String.format(command, 99));
+          String command = String.format("MD%04d%04d000%02d", configuration.getFirstStep(),
+                  configuration.getLastStep(), 99);
+          write(command);
           checkMdmsStatus();
           checkTerminator();
           String scansRemaining = "99";
